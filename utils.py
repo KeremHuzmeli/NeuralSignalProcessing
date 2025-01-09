@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mne.viz import plot_topomap
+import scipy
 
 def topoPlotIndie(eeg, values, ax, title='Topoplot', vlim=(None, None), cmap='jet', contours=6):
     def pol2cart(theta, rho):
@@ -29,3 +30,4 @@ def topoPlotIndie(eeg, values, ax, title='Topoplot', vlim=(None, None), cmap='je
                          cmap=cmap, contours=contours, vlim=vlim)
     ax.set_title(title)
  
+
